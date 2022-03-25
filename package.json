@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "webpack": "webpack",
     "start": "webpack serve"
   },
   "keywords": [],
