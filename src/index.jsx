@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { render } from 'react-dom'
 window.React = React
-import './style.css';
+
 import App from './App';
 
 
