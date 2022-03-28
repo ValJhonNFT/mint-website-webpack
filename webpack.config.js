@@ -41,7 +41,6 @@ module.exports = {
   },
   externals: {
     '@popperjs/core': '@popperjs/core',
-    'react': 'React',
 },
 
 
