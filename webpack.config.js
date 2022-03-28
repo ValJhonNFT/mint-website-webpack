@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { HotModuleReplacementPlugin } = require("webpack");
 module.exports = {
+
   entry: path.join(__dirname, "src", "index.jsx"),
   output: { path: path.join(__dirname, "build"), filename: "index.bundle.js" },
   mode: process.env.NODE_ENV || "development",
@@ -29,6 +30,7 @@ module.exports = {
       template: path.join(__dirname, "src", "index.html"),
     }),
     new HotModuleReplacementPlugin(),
+    
   ],
   devServer: {
     allowedHosts: [".test", "http://localhost:9000/"],
@@ -37,4 +39,10 @@ module.exports = {
     },
     port: 9000,
   },
+  externals: {
+    '@popperjs/core': '@popperjs/core',
+    'react': 'React',
+},
+
+
 };

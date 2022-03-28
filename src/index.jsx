@@ -1,8 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
+window.React = React
+import './style.css';
+import App from './App';
 
-const HelloWorld = () => {
-  return <h1>react webpack setup</h1>;
-};
 
-ReactDOM.render(<HelloWorld />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
